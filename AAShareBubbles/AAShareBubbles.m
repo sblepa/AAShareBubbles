@@ -72,7 +72,7 @@
 
 -(void)buttonWasTapped:(UIButton *)button {
     selectedButtonType = [bubbleIndexTypes[@(button.tag)] intValue];
-    [self shareButtonTappedWithType:buttonType];
+    [self shareButtonTappedWithType:selectedButtonType];
 }
 
 -(void)shareButtonTappedWithType:(int)buttonType {
