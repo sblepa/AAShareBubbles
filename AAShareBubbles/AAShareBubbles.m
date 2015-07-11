@@ -49,7 +49,7 @@
         
         self.facebookBackgroundColorRGB = 0x3c5a9a;
         self.twitterBackgroundColorRGB = 0x3083be;
-        self.mailBackgroundColorRGB = 0xbb54b5;
+        self.mailBackgroundColorRGB = 0xffffff;
         self.googlePlusBackgroundColorRGB = 0xd95433;
         self.tumblrBackgroundColorRGB = 0x385877;
         self.vkBackgroundColorRGB = 0x4a74a5;
@@ -117,7 +117,7 @@
         if(self.showTwitterBubble)      [self createButtonWithIcon:@"icon-aa-twitter.png" backgroundColor:self.twitterBackgroundColorRGB andType:AAShareBubbleTypeTwitter];
         if(self.showGooglePlusBubble)   [self createButtonWithIcon:@"icon-aa-googleplus.png" backgroundColor:self.googlePlusBackgroundColorRGB andType:AAShareBubbleTypeGooglePlus];
         if(self.showTumblrBubble)       [self createButtonWithIcon:@"icon-aa-tumblr.png" backgroundColor:self.tumblrBackgroundColorRGB andType:AAShareBubbleTypeTumblr];
-        if(self.showMailBubble)         [self createButtonWithIcon:@"icon-aa-at.png" backgroundColor:self.mailBackgroundColorRGB andType:AAShareBubbleTypeMail];
+        if(self.showMailBubble)         [self createButtonWithIcon:@"icon-aa-mail.png" backgroundColor:self.mailBackgroundColorRGB andType:AAShareBubbleTypeMail];
         if(self.showVkBubble)           [self createButtonWithIcon:@"icon-aa-vk.png" backgroundColor:self.vkBackgroundColorRGB andType:AAShareBubbleTypeVk];
         if(self.showLinkedInBubble)     [self createButtonWithIcon:@"icon-aa-linkedin.png" backgroundColor:self.linkedInBackgroundColorRGB andType:AAShareBubbleTypeLinkedIn];
         if(self.showPinterestBubble)    [self createButtonWithIcon:@"icon-aa-pinterest.png" backgroundColor:self.pinterestBackgroundColorRGB andType:AAShareBubbleTypePinterest];
