@@ -25,7 +25,7 @@
 {
     NSMutableArray *bubbles;
     NSMutableDictionary *bubbleIndexTypes;
-
+    int     selectedButtonType;
     UIView *faderView;
 }
 
@@ -71,7 +71,7 @@
 #pragma mark Actions
 
 -(void)buttonWasTapped:(UIButton *)button {
-    int buttonType = [bubbleIndexTypes[@(button.tag)] intValue];
+    selectedButtonType = [bubbleIndexTypes[@(button.tag)] intValue];
     [self shareButtonTappedWithType:buttonType];
 }
 
@@ -234,8 +234,8 @@
                     faderView.alpha = 0;
                 } completion:^(BOOL finished) {
                     [faderView removeFromSuperview];
-                    if([self.delegate respondsToSelector:@selector(aaShareBubblesDidHide:)]) {
-                        [self.delegate aaShareBubblesDidHide:self];
+                    if([self.delegate respondsToSelector:@selector(aaShareBubblesDidHide:tappedBubbleWithType:)]) {
+                        [self.delegate aaShareBubblesDidHide:self tappedBubbleWithType:selectedButtonType];
                     }
                     [self removeFromSuperview];
                 }];

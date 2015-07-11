@@ -101,5 +101,5 @@ typedef enum AAShareBubbleType : int {
 -(void)aaShareBubbles:(AAShareBubbles *)shareBubbles tappedBubbleWithType:(int)bubbleType;
 
 // On bubbles hide
--(void)aaShareBubblesDidHide:(AAShareBubbles *)shareBubbles;
+-(void)aaShareBubblesDidHide:(AAShareBubbles *)shareBubbles tappedBubbleWithType:(int)bubbleType;
 @end
