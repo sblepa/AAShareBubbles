@@ -63,6 +63,8 @@
         self.whatsappBackgroundColorRGB = 0x00B000;
         
         self.customButtons = [[NSMutableArray alloc] init];
+        
+        selectedButtonType = -1;
     }
     return self;
 }
